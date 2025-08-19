@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Styled Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --accent: #0f62fe;
+      --muted: #6b6f76;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+    }
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.45;padding:32px;}
+    .container{max-width:900px;margin:0 auto;}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:linear-gradient(90deg, #ffffffcc, #ffffffcc);border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);}
+    .logo{font-weight:700;font-size:1.1rem;color:var(--accent);}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;color:var(--muted);}
+    .hero{display:flex;gap:28px;align-items:center;margin-top:20px;}
+    .card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 8px 24px rgba(16,24,40,0.06);flex:1;}
+    h1{margin:0 0 8px;font-size:1.6rem;}
+    p.lead{color:var(--muted);margin:0 0 18px;}
+    .cta{display:inline-block;padding:10px 18px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px;}
+    .feature{background:#fbfdff;padding:12px;border-radius:10px;border:1px solid #eef3ff;}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:0.9rem;}
+    @media(max-width:640px){.hero{flex-direction:column} header{padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MySite</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h1>Welcome to MySite</h1>
+        <p class="lead">Simple, secure, and fast—designed to help you get things done. Try our service and see the difference.</p>
+        <a class="cta" href="#">Start Free</a>
+
+        <div class="features">
+          <div class="feature"><strong>Secure</strong><div style="color:var(--muted)">SSL, encryption, daily backups</div></div>
+          <div class="feature"><strong>Fast</strong><div style="color:var(--muted)">Optimized for performance</div></div>
+          <div class="feature"><strong>Support</strong><div style="color:var(--muted)">24/7 help desk</div></div>
+        </div>
+      </div>
+
+      <div style="width:240px;text-align:center;">
+        <img alt="phone mock" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='160'><rect rx='12' width='220' height='160' fill='%23ffffff' stroke='%23e6eefc'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='14' fill='%236b6f76'>App preview</text></svg>" style="width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)"/>
+      </div>
+    </div>
+
+    <footer>© 2025 MySite — Trusted by thousands</footer>
+  </div>
+</body>
+</html>
